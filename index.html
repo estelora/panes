@@ -1,131 +1,153 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Maven+Pro:400,500' rel='stylesheet' type='text/css'>
-    <meta charset="utf-8">
-    <title>Panes</title>
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="css/panes.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="icons/css/fontello.css">
-  </head>
-  <body>
-    <div class="spane-content">
-    </div>  
-      <script id="spane-1" type="text/html">
-            <div class="spanel-1">
-              <div class="header effect1">
-                <span class="header-text">
-                  my appointments
-                </span>
-                <label class="header-icon right">
-                  <input type="checkbox" class="add-box">
-                  <span class="icon-plus"></span>
-                </label>
-              </div>
-              <div class="appt-list">
-                <li class="appt-item">
-                  <div class="appt-name">Project Deadline</div>
-                  <label class="remove-icon right">
-                    <input type="checkbox" class="remove-box">
-                    <span class="icon-cancel"></span>
-                  </label>
-                  <div class="list-when">
-                    <span class="icon-calendar-alt list-icon"></span>
-                    <span class="appt-date">2.13.2015</span>
-                    <span class="icon-clock-alt list-icon"></span>
-                    <span class="appt-time"> 1:30 pm</span>
-                  </div>
-                  <div class="list-locale">
-                    <span class="icon-location list-icon"></span>
-                    <span class="appt-street">2530 Waverly Road</span>
-                    <p class="appt-city">Durham, NC</p>
-                  </div>
-                </li>
-              </div>
-                <li class="appt-item">
-                  <div class="appt-name">Romantic Dinner</div>
-                  <label class="remove-icon right">
-                    <input type="checkbox" class="remove-box">
-                    <span class="icon-cancel"></span>
-                  </label>
-                  <div class="list-when">
-                    <span class="icon-calendar-alt list-icon"></span>
-                    <span class="appt-date">2.14.2015</span>
-                    <span class="icon-clock-alt list-icon"></span>
-                    <span class="appt-time"> 7:00 pm</span>
-                  </div>
-                  <div class="list-locale">
-                    <span class="icon-location list-icon"></span>
-                    <span class="appt-street">My Home</span>
-                    <p class="appt-city">Durham, NC</p>
-                </li>
-            </div>
-      </script>
 
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Maven+Pro:400,500' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+  <title>Panes</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/panes.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="icons/css/fontello.css">
+</head>
 
-      <script id="spane-2" type="text/html">
+<body>
 
-        <div class="spanel-2">
-          <div class="header less-left">
-            <label class="back-spane1 header-icon">
-              <input type="checkbox" class="add-box">
-              <span class="icon-left-dir"></span>
-            </label>
-            <span class="header-text tab">Create Appointment</span>
+  <div class="spane-content">
+  </div>
+
+  <script id="spane-list" type="text/html">
+
+    <div class="spanel-1">
+
+      <div class="header effect1">
+
+        <span class="header-text">
+          my appointments
+        </span>
+
+        <label class="header-icon right">
+          <input type="checkbox" class="add-box">
+          <span class="icon-plus"></span>
+        </label>
+
+      </div>
+
+      <ul class="appt-list">
+
+      </ul>
+    </div>
+  </script>
+
+  <script id="spane-create" type="text/html">
+
+    <div class="spanel-2">
+
+      <div class="header less-left">
+        <label class="back-spane1 header-icon">
+          <input type="checkbox" class="add-box">
+          <span class="icon-left-dir"></span>
+        </label>
+        <span class="header-text tab">Create Appointment</span>
+      </div>
+
+      <div class="form-list">
+        <form class="appt-data edit-data">
+
+          <div class="input-box">
+            <span class="icon-th-list list-icon"></span>
+            Title:
+            <input type="text" name="Title" placeholder="" size="15" maxlength="30" />
           </div>
-          <div class="form-list">
-            <form>
-              <div class = "input-box">
-                <span class="icon-th-list list-icon"></span>
-                Title:
-                <input type="text" name="Title" placeholder="Romantic Dinner" size="15" maxlength="30"/>
-              </div>
-              <div class = "input-box">
-                <span class="icon-calendar-alt list-icon"></span>
-                Date:
-                <input type="date" name="Date" placeholder="02/14/2015" size="15" maxlength="30"/>
-              </div>
-              <div class = "input-box">
-                <span class="icon-clock-alt list-icon"></span>
-                Time:
-                <input type="time" name="Time" placeholder="7:00 pm" size="15" maxlength="30"/>
-              </div>
-              <div class="input-box">
-                <span class="icon-home list-icon"></span>
-                Street:
-                <input type="text" name="Street" placeholder="467 Main Street" size="15" maxlength="30"/>
-              </div>
-              <div class="input-box">
-                <span class="icon-location list-icon"></span>
-                City, State:
-                <input type="text" name="City, State" placeholder="Durham, NC" size="15" maxlength="30"/>
-              </div>
-              <div class="input-box">
-                <input type="submit" value="Save the Date!" class= "save">
-              </form>
-            </div>
-          </div>
-        </script>
 
-        <script id="spane-3" type="text/html">
-          <div class="spanel-3">
-            <div class="header">
-              <h1>Details</h1>
-              <button class="back-spane2"><</button>
-              <button class="edit-details">Edit</button>
-            </div>
-            <form>
-              <p class= "title">Romantic Dinner</p>
-              <br>
-              <p class= "time">7:00pm</p>
-              <p class="date"> 02/14/2015</p>
-              <br>
-              <p class= "location">467 Main Street, Durham, NC </p>
-              <br>
-              <div class= "weather"> weather img here! </div>
-            </form>
+          <div class="input-box">
+            <span class="icon-calendar-alt list-icon"></span>
+            Date:
+            <input type="text" name="Date" placeholder="" size="15" maxlength="30" />
           </div>
-        </script>
-  </body>
+
+          <div class="input-box">
+            <span class="icon-clock-alt list-icon"></span>
+            Time:
+            <input type="text" name="Time" placeholder="" size="15" maxlength="30" />
+          </div>
+
+          <div class="input-box">
+            <span class="icon-home list-icon"></span>
+            Street:
+            <input type="text" name="Street" placeholder="" size="15" maxlength="30" />
+          </div>
+
+          <div class="input-box">
+            <span class="icon-location list-icon"></span>
+            City, State:
+            <input type="text" name="City, State" placeholder="" size="15" maxlength="30" />
+          </div>
+
+          <div class="input-box">
+            <input type="button" value="Create!" class="save change-details">
+          </div>
+
+        </form>
+
+
+      </div>
+    </div>
+  </script>
+
+  <script id="spane-detail" type="text/html">
+
+    <div class="spanel-3">
+
+      <div class="header less-left">
+        <label class="back-spane1 header-icon left">
+          <input type="checkbox" class="add-box">
+          <span class="icon-left-dir"></span>
+        </label>
+        <span class="header-text tab">details</span>
+        <label class="edit header-icon right">
+          <input type="checkbox" class="add-box">
+          <span class="icon-pencil"></span>
+        </label>
+      </div>
+
+      <div class="detail">
+      </div>
+  </script>
+
+  <script id="spane-edit" type="text/html">
+
+    <div class="spanel-4">
+      <div class="header less-left">
+        <label class="back-spane1 header-icon left">
+          <input type="checkbox" class="add-box">
+          <span class="icon-left-dir"></span>
+        </label>
+        <span class="header-text tab">Edit Appointment</span>
+        </span>
+      </div>
+      <div class="form-list">
+      </div>
+
+    </div>
+  </script>
+  <script id="appt-list-template" type="text/html">
+
+
+
+  </script>
+
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="bower_components/lodash/lodash.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="js/pages/create.js"></script>
+  <script src="js/pages/details.js"></script>
+  <script src="js/pages/edit.js"></script>
+  <script src="js/pages/list.js"></script>
+  <script src="js/appt.js"></script>
+  <script src="js/apptList.js"></script>
+  <script src="js/apptStorage.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
 </html>
