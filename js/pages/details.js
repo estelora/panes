@@ -1,6 +1,6 @@
 var DetailsPage = {
 
-  load: function() {
+  load: function(appt) {
     var html = $('#spane-detail').html();
     $('.spane-content').html(html);
 
@@ -10,42 +10,29 @@ var DetailsPage = {
       ListPage.render();
     });
 
+    $('.edit').click(function() {
+      EditPage.load(appt);
+    });
 
     /*
      * SYNTAX: $.get("url", function)
      * create a local server  in terminal: python -m SimpleHTTPServer
      * type "localhost:8000" in browser to use the website
      */
+
     $.get("template/details.html", function(template) {
       var detailTemplate = _.template(template);
-
-      var html = editTemplate({
+      var html = detailTemplate({
+        // variable: edit, value: appt
         appt: appt
       });
-
       $('.detail').html(html);
 
-      // $('.change-details').click(function(){
-      //
-      //   appt.title = $(".edit-title").val();
-      //   appt.date = $(".edit-date").val();
-      //   appt.time = $(".edit-time").val();
-      //   appt.street = $(".edit-street").val();
-      //   appt.city = $(".edit-city").val();
+      //weather API here
+      $.get("http://api.openweathermap.org/data/2.5/weather?q="+appt.city+","+appt.state, function(weather) {
+          $(".weather-widget").html(weather.weather[0].description);
 
-
-      //load list page after editing info
-      ListPage.load();
-      ListPage.render();
-
+      });
     });
-  });
-},
-
-
-
-
-onClickBack: function() {},
-
-  onClickEdit: function() {},
-};
+   },
+ };

@@ -17,7 +17,8 @@
          date: $(".create-date").val(),
          time: $(".create-time").val(),
          street: $(".create-street").val(),
-         city: $(".create-city").val()
+         city: $(".create-city").val(),
+         state: $(".create-state").val()
        });
 
        //load list page after saving info

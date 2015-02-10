@@ -8,25 +8,20 @@ var appleListString = JSON.stringify(appleList);
 appleListString;
 */
 
-
 function AppointmentStorage() {
   var self = {};
-
-  self.clear
-
-
-
   //parse json apptList string back into array when we start the app
   //call the array later
+
   self.load = function() {
     var loadList = window.localStorage.apptList;
     if (loadList) {
       return JSON.parse(loadList);
+      //if there's nothing, return an empty array
     } else {
       return [];
     }
   }
-
 
   self.save = function(array) {
     //take array

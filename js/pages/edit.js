@@ -11,8 +11,6 @@ var EditPage = {
       ListPage.render();
     });
 
-
-
     /*
      * SYNTAX: $.get("url", function)
      * create a local server  in terminal: python -m SimpleHTTPServer
@@ -20,13 +18,11 @@ var EditPage = {
      */
     $.get("template/edit.html", function(template) {
       var editTemplate = _.template(template);
-
       var html = editTemplate({
-        appt: appt
+        // variable: edit, value: appt
+        edit: appt
       });
-
-      $('.form-list').html(html);
-
+      $('.edit-data').html(html);
       $('.change-details').click(function() {
 
         appt.title = $(".edit-title").val();
@@ -34,22 +30,16 @@ var EditPage = {
         appt.time = $(".edit-time").val();
         appt.street = $(".edit-street").val();
         appt.city = $(".edit-city").val();
-
+        appt.state = $(".edit-state").val();
         //save to local storage
         App.appts.save();
-
         //load list page after editing info
         ListPage.load();
         ListPage.render();
-
       });
     });
   },
-
   onClickOptions: function() {},
 
-
   onClickDelete: function() {},
-
-
 };
