@@ -37,6 +37,9 @@ var EditPage = {
         ListPage.load();
         ListPage.render();
       });
+      $('.delete').click(function(){
+        alert('click delete');
+      });
     });
   },
   onClickOptions: function() {},
