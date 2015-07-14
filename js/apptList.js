@@ -29,9 +29,6 @@ function AppointmentList() {
     storage.save(list);
   };
 
-  //http://stackoverflow.com/questions/5767325/remove-specific-element-from-an-array
-  // don't be stupid. use stackoverflow!
-  // splice explanation
   self.delete = function(appt) {
     var index = list.indexOf(appt);
     if (index !== -1) {
@@ -48,19 +45,3 @@ function AppointmentList() {
   return self;
 }
 
-/*
-// These two are equivalent:
-
-var banana = {
-  peel: function() {}
-};
-banana.peel();
-
-and...
-
-var banana = {};
-banana.peel = function(){};
-
-banana.peel();
-*/
-// var list = AppointmentList();
