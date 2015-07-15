@@ -10,13 +10,13 @@
 function AppointmentList() {
   var storage = AppointmentStorage();
   var list = storage.load();
-  // /*
+
   //   self is an object that has various
   //   functions on it that we can use
   //   creating an object that has functions
   //   self is like a mannequin object
-  // return self at the end of
-  // AppointmentList so they get it back/
+  //   return self at the end of
+  //   AppointmentList so they get it back
   var self = {};
 
   self.save = function() {
