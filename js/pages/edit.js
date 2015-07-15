@@ -48,8 +48,7 @@ var EditPage = {
 
     });
   },
+
+};
   
-
-  //onClickOptions: function() {},
-
   
