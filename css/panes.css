@@ -84,6 +84,10 @@ body {
     color: #3d3c39;
     font-size: 20pt;
 }
+
+.right-icon {
+  float: right;
+}
 .appt-list {
   background-color: #ffce7f;
   width: 90%;
