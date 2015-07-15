@@ -16,6 +16,7 @@ var EditPage = {
      * create a local server  in terminal: python -m SimpleHTTPServer
      * type "localhost:8000" in browser to use the website
      */
+
     $.get("template/edit.html", function(template) {
       var editTemplate = _.template(template);
       var html = editTemplate({
@@ -23,6 +24,7 @@ var EditPage = {
         edit: appt
       });
       $('.edit-data').html(html);
+
       $('.change-details').click(function() {
 
         appt.title = $(".edit-title").val();
@@ -37,12 +39,17 @@ var EditPage = {
         ListPage.load();
         ListPage.render();
       });
+
       $('.delete').click(function(){
-        alert('click delete');
+        App.appts.delete(appt);
+        ListPage.load();
+        ListPage.render();
       });
+
     });
   },
-  onClickOptions: function() {},
+  
 
-  onClickDelete: function() {},
-};
+  //onClickOptions: function() {},
+
+  
