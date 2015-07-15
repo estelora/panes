@@ -1,15 +1,13 @@
 <!-- List page template, fetch with ajax -->
 <% list.forEach(function (appt, index) { %>
   <li class="appt-item" appt-index="<%- index %>">
+     <div class="input-box">
+    <input type="button" value="Remove Appt" class="delete">
+  </div>
     <div class="appt-name">
       <%- appt.title %>
     </div>
 
-    <!-- code remove button later, possibly
-  <label class="remove-icon right">
-    <input type="checkbox" class="remove-box">
-    <span class="icon-cancel"></span>
-  </label> -->
 
     <div class="list-when">
       <span class="icon-calendar-alt list-icon"></span>
