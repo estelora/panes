@@ -1,34 +1,33 @@
 <!-- List page template, fetch with ajax -->
 <% list.forEach(function (appt, index) { %>
-  <li class="appt-item" appt-index="<%- index %>">
-     <div class="input-box">
-    <input type="button" value="Remove Appt" class="delete">
+<li class="appt-item" appt-index="<%- index %>">
+ <div class="input-box">
+ </div>
+ <div class="appt-name">
+  <%- appt.title %>
+</div>
+
+
+<div class="list-when">
+  <span class="icon-calendar-alt list-icon"></span>
+  <span class="appt-date">
+    <%- appt.date %>
+  </span>
+  <span class="icon-clock-alt list-icon"></span>
+  <span class="appt-time">
+    <%- appt.time %>
+  </span>
+</div>
+
+<div class="list-locale">
+  <span class="icon-location list-icon"></span>
+  <span class="appt-street">
+    <%- appt.street %>
+  </span>
+  <p class="appt-city">
+    <%- appt.city %>, <%- appt.state %> </p>
+
   </div>
-    <div class="appt-name">
-      <%- appt.title %>
-    </div>
-
-
-    <div class="list-when">
-      <span class="icon-calendar-alt list-icon"></span>
-      <span class="appt-date">
-        <%- appt.date %>
-      </span>
-      <span class="icon-clock-alt list-icon"></span>
-      <span class="appt-time">
-        <%- appt.time %>
-      </span>
-    </div>
-
-    <div class="list-locale">
-      <span class="icon-location list-icon"></span>
-      <span class="appt-street">
-        <%- appt.street %>
-      </span>
-      <p class="appt-city">
-        <%- appt.city %>, <%- appt.state %> </p>
-
-    </div>
 
     <!-- code weather api later, possibly
   <div class="list-weather">
@@ -36,6 +35,6 @@
       <span class="appt-sky"></span></span>
       <span class="icon-temperature list-icon"></span>
       <span class="appt-temp"></span>
-  </div> -->
+    </div> -->
   </li>
   <% }) %>
