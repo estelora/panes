@@ -1,38 +1,44 @@
+
+
 <span class="title-detail">
     <%- appt.title %>
 </span>
 </div>
 <div class="line"></div>
 
-<span class="time-detail">
-  <span class="icon-clock-alt list-icon">
-   Time: <%- appt.time %>
- </span>
-</span>
-<span class="date-detail">
-  <span class="icon-calendar-alt list-icon"></span>
-  Date: <%- appt.date %>
-</span>
-<span class= "weather-widget">
-  <span class="weather-header">Forecast: </span>
-  <span class="weather-description"></span>
+  <span class="time-detail">
+    <span class="icon-clock-alt list-icon"></span>
+     Time: <%- appt.time %>
+  </span>
 
-</span>
+  <span class="date-detail">
+    <span class="icon-calendar-alt list-icon"></span>
+    Date: <%- appt.date %>
+  </span>
 
-<div class="detail">
-  <div class="location-detail">
-    <span class="icon-location list-icon"></span>
-    Location:
-    <%- appt.street %>,
-    <%- appt.city %>
+  <div class= "weather-widget">
+    <span class="weather-header">Forecast: </span>
+    <span class="weather-description"></span>
 
-    <!--   Google Maps later, integrate api if possible -->
-    <div class= "map-widget">
+  </div>
 
-    </div>
+  <div class="map">
+    <div class="location-detail">
+      <span class="icon-location list-icon"></span>
+      Location:
+      <%- appt.street %>,
+      <%- appt.city %>
+
+      <!--   Google Maps later, integrate api if possible -->
+      <div class= "map-widget">
+
+      </div>
+
+  
 
   </div>
 </div>
+
 
 
 
