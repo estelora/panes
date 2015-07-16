@@ -28,11 +28,14 @@ var DetailsPage = {
       });
       $('.detail').html(html);
 
+
       //weather API here
       $.get("http://api.openweathermap.org/data/2.5/weather?q="+appt.city+","+appt.state, function(weather) {
-          $(".weather-widget").html(weather.weather[0].description);
-
+          $(".weather-description").html(weather.weather[0].description);
       });
+
+
+
     });
    },
  };
