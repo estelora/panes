@@ -60,7 +60,6 @@ body {
 .header-icon {
     position: relative;
     display: block;
-    width: 5%;
     height: 0;
     color: #ffffff;
     font-size: 24pt;
@@ -297,7 +296,6 @@ input {
 }
 
 .edit-title {
-  padding-right: .8em;
   border: 1px solid lightslategray;
   -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
@@ -305,7 +303,6 @@ input {
 }
 
 .edit-date {
-  padding-right: .8em;
   border: 1px solid lightslategray;
   -webkit-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.75);
@@ -313,8 +310,7 @@ input {
 }
 
 .edit-time {
-  padding-right: .8em;
-  /*border: 1px solid lightslategray;*/
+  border: 1px solid lightslategray;
   -webkit-box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
   -moz-box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
   box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
@@ -323,7 +319,6 @@ input {
 }
 
 .edit-street {
-  padding-right: .8em;
   border: 1px solid lightslategray;
   -webkit-box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
   -moz-box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
@@ -331,7 +326,6 @@ input {
 
 }
 .edit-city {
-  padding-right: .8em;
   border: 1px solid lightslategray;
   -webkit-box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
   -moz-box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
@@ -340,7 +334,6 @@ input {
 }
 
 .edit-state {
-  padding-right: .8em;
   border: 1px solid lightslategray;
   -webkit-box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
   -moz-box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
@@ -426,7 +419,7 @@ input {
 
 @media all and (max-width: 950px) {
   .spane-content {
-    max-width: 95%;
+    width: 95%;
     margin: 4% auto;
   }
   .header-text {
@@ -449,8 +442,114 @@ input {
   }
 }
 
+@media all and (max-width: 750px) {
+  .spane-content {
+    width: 100%;
+    margin: 0;
+  }
+  .header-text {
+   padding: 1% 2% 1%;
+  }
+  .tab {
+      padding-left: 10% !important;
+   }
+  .icon-plus {
+    margin-right: 5%;
+    padding-right: 5%;
+  }
+  .icon-pencil {
+    margin-right: 5%;
+    padding-right: 5%;
+  }
+  .icon-left-dir {
+    margin-left: 5%;
+    padding-left: 5%;
+  }
+  .detail {
+    margin: 6% auto 4%;
+  }
+  .form-list {
+    margin: 6% auto 4%;
+  }
+}
+
+@media all and (max-width: 575px) {
+  .spane-content {
+    width: 100%;
+    margin: 0;
+    min-height: 600px;
+  }
+  .header-text {
+   padding: 1% 2% 1%;
+  }
+  .tab {
+      padding-left: 10% !important;
+   }
+   .header-icon {
+    padding-right: 4%;
+   }
+  .icon-plus {
+    margin-right: 8%;
+    padding-right: 8%;
+  }
+  .icon-pencil {
+    margin-right: 5%;
+    padding-right: 5%;
+  }
+  .icon-left-dir {
+    margin-left: 5%;
+    padding-left: 5%;
+  }
+  .detail {
+    margin: 6% auto 4%;
+  }
+  .form-list {
+    width: 80%;
+    margin: 6% auto;
+  }
+}
 
 
+@media all and (max-width: 475px) {
+  .spane-content {
+    width: 100%;
+    /*margin: 0;*/
+
+  }
+  .header-text {
+   padding: 1% 2% 1%;
+   font-size: 30px;
+  }
+  .tab {
+      padding-left: 10% !important;
+   }
+   .input-box {
+    font-size: 16px;
+    padding: 1% 0;
+   }
+   .header-icon {
+    padding-right: 4%;
+   }
+  .icon-plus {
+    margin-right: 8%;
+    padding-right: 8%;
+  }
+  .icon-pencil {
+    margin-right: 5%;
+    padding-right: 5%;
+  }
+  .icon-left-dir {
+    margin-left: 5%;
+    padding-left: 5%;
+  }
+  .detail {
+    margin: 6% auto 4%;
+  }
+  .form-list {
+    width: 80%;
+    margin: 6% auto;
+  }
+}
 
 
 
