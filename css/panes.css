@@ -1,10 +1,19 @@
 body {
-  background-color: #ffce7f;
+  background-color: floralwhite;
 }
 
 .spane-content{
-  height: 100%;
-  width: auto;
+  width: 70%;
+  margin: 5% auto;
+  border: 3px solid black;
+  background-color: firebrick;
+  border-radius: 10px;
+}
+
+.spanel-1 {
+  padding 1%;
+  margin-bottom: 2%;
+  background-color: firebrick;
 }
 
 .container {
@@ -12,22 +21,21 @@ body {
 }
 
 .header {
-  background-color:  #3d3c39;
+  background-color: black;
   width: 100%;
   height: 8%;
-  padding-top: 1.25em;
-  padding-left: 1.5em;
-  padding-bottom: 1.25em;
+  padding-top: 1%;
+  padding-bottom: 1%;
   z-index: 10;
 
 }
 .header-text{
   font-family: 'Josefin Slab', serif;
-  color: #ffce7f;
-
-   font-size: 24pt;
+  color: floralwhite;
+  padding-left: 1%;
+  background-color: black;
+  font-size: 40px;
 }
-
 .right {
   float: right;
 }
@@ -52,9 +60,8 @@ body {
 .header-icon {
     position: relative;
     display: block;
-    width: 15%;
+    width: 5%;
     height: 0;
-    padding-right: .5em;
     color: #ffffff;
     font-size: 24pt;
 }
@@ -92,7 +99,7 @@ body {
   float: right;
 }
 .appt-list {
-  background-color: #ffce7f;
+  background-color: firebrick;
   width: 90%;
   top: 4em;
   margin-left: auto;
@@ -101,11 +108,11 @@ body {
 }
 
 .appt-item {
-  width: 100%;
+  width: 90%;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  background-color: #d3fdff;
+  background-color: floralwhite;
   list-style: none;
   margin-top: 1em;
   border-radius: 1em;
@@ -154,11 +161,12 @@ body {
 }
 
 .form-list {
-  background-color: #ffce7f;
+  background-color: floralwhite;
+  border-radius: 10px;
   width: 95%;
   position: static;
   top: 4em;
-  margin: 0 auto;
+  margin: 2% auto 3%;
   font-weight: bolder;
   font-family: 'Josefin Slab', serif;
   font-size: 18pt;
@@ -223,25 +231,18 @@ input {
   text-decoration: none;
 }
 .detail {
-  padding: 1em 0;
-  width: 90%;
+  padding: 2%;
+  width: 80%;
+  background-color: floralwhite;
+  border-radius: 10px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 3% auto 4%;
 }
 
 .line {
   border-bottom: 5pt double #3d3c39;
-  width: 95%;
-  margin-bottom: .5em;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.small {
-  width: 80%;
-  border-bottom: 4pt double #3d3c39;
-
+  margin: 1% auto;
+  width: 90%;
 }
 
 .smallest {
@@ -257,7 +258,7 @@ input {
     font-weight: bolder;
     font-family: 'Josefin Slab', serif;
     font-size: 28pt;
-    color: #732d75;
+    color: black;
     padding-top: .5em;
 }
 
@@ -309,22 +310,21 @@ input {
 }
 
 .map-widget {
-    width: 500px;
-    height: 400px;
+    width: 300px;
+    height: 300px;
     background-color: #CCC;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .weather-widget {
   background-color: #7fab79;
-  width: 18em;
-  height: 8em;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: .5em;
-  margin-bottom: 1em;
-  padding: .25em;
+  width: 40%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  padding: 0.5%;
   border: 3pt solid #3d3c39;
+
 }
 
 .options {

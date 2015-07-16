@@ -1,6 +1,7 @@
 var DetailsPage = {
 
   load: function(appt) {
+    var description = '';
     var html = $('#spane-detail').html();
     $('.spane-content').html(html);
 
@@ -31,10 +32,8 @@ var DetailsPage = {
 
       //weather API here
       $.get("http://api.openweathermap.org/data/2.5/weather?q="+appt.city+","+appt.state, function(weather) {
-          $(".weather-description").html(weather.weather[0].description);
+          $(".weather-description").html(weather.weather[0].description);          
       });
-
-
 
     });
    },
