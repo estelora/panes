@@ -7,6 +7,9 @@ body {
   width: auto;
 }
 
+.container {
+  display: flex; 
+}
 
 .header {
   background-color:  #3d3c39;
@@ -306,18 +309,10 @@ input {
 }
 
 .map-widget {
-  background-color: #7fab79;
-  width: 18em;
-  height: 8em;
-  margin-left: auto;
-  margin-right: auto;
-  display: block;
-  margin-top: .5em;
-  margin-bottom: 2em;
-  padding: .25em;
-  border: 3pt solid #3d3c39;
+    width: 500px;
+    height: 400px;
+    background-color: #CCC;
 }
-
 
 .weather-widget {
   background-color: #7fab79;
@@ -339,3 +334,31 @@ input {
     color: #732d75;
     padding-top: .5em;
 }
+
+/*------------------------------------*\
+    #MEDIA QUERIES
+\*------------------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
