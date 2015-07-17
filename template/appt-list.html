@@ -1,31 +1,33 @@
 <!-- List page template, fetch with ajax -->
+
 <% list.forEach(function (appt, index) { %>
-<li class="appt-item" appt-index="<%- index %>">
-   <div class="input-box">
-   </div>
-   <div class="appt-name">
-    <%- appt.title %>
-  </div>
+  <li class="appt-item" appt-index="<%- index %>">
+     
+     <div class="input-box">
+     </div>
+     <div class="appt-name">
+      <%- appt.title %>
+    </div>
 
-  <div class="list-when">
-    <span class="icon-calendar-alt list-icon"></span>
-    <span class="appt-date">
-      <%- appt.date %>
-    </span>
-    <span class="icon-clock-alt list-icon"></span>
-    <span class="appt-time">
-      <%- appt.time %>
-    </span>
-  </div>
+    <div class="list-when">
+      <span class="icon-calendar-alt list-icon"></span>
+      <span class="appt-date">
+        <%- appt.date %>
+      </span>
+      <span class="icon-clock-alt list-icon"></span>
+      <span class="appt-time">
+        <%- appt.time %>
+      </span>
+    </div>
 
-  <div class="list-locale">
-    <span class="icon-location list-icon"></span>
-    <span class="appt-street">
-      <%- appt.street %>
-    </span>
-    <p class="appt-city">
-      <%- appt.city %>, <%- appt.state %> </p>
-  </div>
+    <div class="list-locale">
+      <span class="icon-location list-icon"></span>
+      <span class="appt-street">
+        <%- appt.street %>
+      </span>
+      <p class="appt-city">
+        <%- appt.city %>, <%- appt.state %> </p>
+    </div>
 
-</li>
-  <% }) %>
+  </li>
+<% }) %>
