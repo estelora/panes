@@ -1,6 +1,6 @@
-#weatherDates
+#Panes / WeatherDates
 
-##Appointment Management that includes the weather forecast
+###Appointment Management app that includes the weather forecast
 
 - Tech Used: jQuery, lodash, Javascript, CSS, HTML5, AJAX, & JSON
 - Add / Remove / Edit Appts
