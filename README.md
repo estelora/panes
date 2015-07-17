@@ -1,7 +1,9 @@
-# panes
+#weatherDates
 
-###Appointment Management app
+##Appointment Management that includes the weather forecast
 
-- Add/ Remove / Edit Appts
-- Calls Weather API based on location
-- Jquery, lodash, Javascript, CSS, HTML5
+- Tech Used: jQuery, lodash, Javascript, CSS, HTML5, AJAX, & JSON
+- Add / Remove / Edit Appts
+- Responsive Design
+- Persists Appointment Data in Local Storage
+- Calls WeatherMap API based on location
