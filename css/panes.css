@@ -218,7 +218,7 @@ input {
   display: block;
   text-decoration: none;
   background-color: floralwhite;
-  color: firebrick;
+  color: black;
   border: 1.5px solid black;
   text-shadow: 1px 1px 0px rgba(150, 150, 150, 0.9);
   -webkit-box-shadow: 2px 2px 0px 0px rgba(178,34,34,1);
@@ -249,9 +249,9 @@ input {
 
 
 .line {
-  border-bottom: 5pt double #3d3c39;
+  border-bottom: 5px double #3d3c39;
   margin: 1% auto;
-  width: 90%;
+  width: 85%;
 }
 .delete {
   float: right;
@@ -277,7 +277,7 @@ input {
     font-weight: bolder;
     font-family: 'Josefin Slab', serif;
     font-size: 28pt;
-    color: black;
+    color: rgb(42, 44, 50);
     padding-top: .5em;
 }
 
@@ -295,10 +295,10 @@ input {
 }
 
 .create-input {
-   border: 1px solid lightslategray;
-  -webkit-box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
-  -moz-box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
-  box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
+ border: 1px solid lightslategray;
+ -webkit-box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
+ -moz-box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
+ box-shadow: 1px 1px 1px 0px rgba(119, 136, 153,0.75);
 }
 .edit-input {
  border: 1px solid lightslategray;
@@ -310,7 +310,7 @@ input {
 .time-detail {
     font-weight: bolder;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 16pt;
+    font-size: 
     color: #3d3c39;
     padding-top: .5em;
 }
@@ -318,7 +318,7 @@ input {
 .date-detail {
     font-weight: bolder;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 16pt;
+    font-size: 22px;
     color: #3d3c39;
     padding-top: .5em;
 }
@@ -326,14 +326,20 @@ input {
 .location-detail {
     font-weight: bolder;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 16pt;
+    font-size: 22px;
     color: #3d3c39;
 }
-
+.detail-element {
+  padding: 1% 0;
+  font-weight: bolder;
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 22px;
+    color: #3d3c39;
+}
 .weather-detail {
     font-weight: bolder;
     font-family: 'Maven Pro', sans-serif;
-    font-size: 12pt;
+    font-size: 22px;
     color: #3d3c39;
 }
 
