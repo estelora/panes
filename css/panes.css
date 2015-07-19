@@ -343,6 +343,9 @@ input {
     font-size: 22px;
     color: #3d3c39;
 }
+.weather-description {
+  text-transform: capitalize;
+}
 
 .map-widget {
     width: 300px;
